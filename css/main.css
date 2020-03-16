@@ -234,7 +234,7 @@ nav hr {
 /*  PROJECTS  */
 #projects {
   position: relative;
-  top: 160px;
+  top: 150px;
 }
 
 #projects #rock-paper-scissors {
@@ -295,12 +295,12 @@ nav hr {
 @media only screen and (min-width: 768px) {
   /*  HEADER */
   header {
-    height: 260px;
+    height: 33vh;
   }
   .card {
     background: -webkit-gradient(linear, left top, right top, from(#141e30), to(#3c084a));
     background: linear-gradient(90deg, #141e30, #3c084a);
-    height: 235px;
+    height: calc(33vh - 25px);
     top: 10px;
   }
   .grid-container {
@@ -342,7 +342,8 @@ nav hr {
     margin-top: 50px;
   }
   .grid-container .social {
-    padding-left: 25vw;
+    position: relative;
+    left: 200px;
     -ms-grid-column: 3;
         grid-column-start: 3;
     grid-column-end: 4;

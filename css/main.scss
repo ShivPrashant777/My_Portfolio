@@ -217,7 +217,7 @@ nav {
 
 #projects {
     position: relative;
-    top: 160px;
+    top: 150px;
     
     #rock-paper-scissors {
         background: rgb(218, 218, 255);
@@ -267,12 +267,12 @@ nav {
 @media only screen and (min-width: 768px) {
     /*  HEADER */
     header {
-        height: 260px;
+        height: 33vh;
     }
 
     .card {
         background: linear-gradient(90deg, #141e30, #3c084a);
-        height: 235px;
+        height: calc(33vh - 25px);
         top: 10px;
     }
 
@@ -312,7 +312,8 @@ nav {
         }
 
         .social {
-            padding-left: 25vw;
+            position: relative;
+            left: 200px;
             grid-column-start: 3;
             grid-column-end: 4;
             grid-row-start: 1;
