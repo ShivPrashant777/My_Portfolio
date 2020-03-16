@@ -55,6 +55,11 @@ header {
             top: 2.5px;
             left: 2.5px;
             width: 200px;
+            animation: fadein 2s;
+        }
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
         }
     }
 
