@@ -7,6 +7,15 @@ html {
     --purple: #c701f8;
     --dark-purple: rgb(19, 2, 39);
     --orange: #ff6b30;
+    --gradient1: #3c084a;
+    --gradient2: #141e30;
+}
+
+html[data-theme='dark'] {
+    --red: #2600a0;
+    --pink: #5d81f8;
+    --purple: #00ff95;
+    --orange: #00a8ff;
 }
 
 body {
@@ -28,7 +37,7 @@ header {
     top: 30px;
     border-radius: 5px;
     margin: 0 10px;
-    background: linear-gradient(180deg, #3c084a, #141e30);
+    background: linear-gradient(180deg, var(--gradient1), var(--gradient2));
     box-shadow: 1px 1px 5px rgb(27, 27, 27);
 }
 
@@ -60,6 +69,9 @@ header {
         @keyframes fadein {
             from { opacity: 0; }
             to   { opacity: 1; }
+        }
+        img:hover {
+            cursor: pointer;
         }
     }
 
@@ -157,7 +169,7 @@ nav {
     position: relative;
     top: 150px;
     background: rgb(255, 230, 254);
-    height: 200px;
+    height: 250px;
 }
 
 .left {
@@ -166,7 +178,6 @@ nav {
 
     h1 {
         margin-top: 0;
-        
         margin-bottom: 0;
         font-size: 2em;
         font-weight: 100;
@@ -271,7 +282,7 @@ nav {
     }
 
     .card {
-        background: linear-gradient(90deg, #141e30, #3c084a);
+        background: linear-gradient(90deg, var(--gradient2), var(--gradient1));
         height: 235px;
         top: 10px;
     }
@@ -285,7 +296,7 @@ nav {
             position: relative;
             width: 175px;
             height: 175px;
-            background: linear-gradient(90deg, #ca0360, #ff6b30);
+            background: linear-gradient(90deg, var(--red), var(--orange));
             border-radius: 500px;
             grid-column-start: 1;
             grid-column-end: 2;
@@ -422,6 +433,6 @@ nav {
         left: 220px;
         width: 5px;
         height: 100px;
-        background: linear-gradient(180deg, #ca0360, #ff6b30);
+        background: linear-gradient(180deg, var(--red), var(--orange));
     }
 }
