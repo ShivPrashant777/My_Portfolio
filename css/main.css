@@ -8,17 +8,25 @@ html {
   --orange: #ff6b30;
   --gradient1: #3c084a;
   --gradient2: #141e30;
+  --body: white;
+  --font-color: black;
+  --container1: white;
 }
 
 html[data-theme='dark'] {
-  --red: #2600a0;
-  --pink: #5d81f8;
-  --purple: #00ff95;
-  --orange: #00a8ff;
+  --dark-purple: var(--body);
+  --gradient1: #232323;
+  --gradient2: #232323;
+  --body: #181818;
+  --font-color: white;
+  --container1: var(--gradient1);
+  --container2: var(--body);
 }
 
 body {
   margin: 0;
+  background: var(--body);
+  color: var(--font-color);
 }
 
 body a {
@@ -163,7 +171,7 @@ header {
 nav {
   position: relative;
   top: 150px;
-  background: var(--dark-purple);
+  background: var(--gradient1);
   height: 50px;
 }
 
@@ -198,8 +206,8 @@ nav hr {
 /*  ABOUT */
 #about {
   position: relative;
-  top: 150px;
-  background: #ffe6fe;
+  top: 155px;
+  background: var(--container1);
   height: 250px;
 }
 
@@ -214,7 +222,7 @@ nav hr {
   font-size: 2em;
   font-weight: 100;
   text-align: center;
-  color: var(--red);
+  color: var(--pink);
 }
 
 .left p {
@@ -248,7 +256,7 @@ nav hr {
   font-size: 2em;
   font-weight: 100;
   text-align: center;
-  color: var(--red);
+  color: var(--pink);
 }
 
 .right p {
@@ -271,6 +279,10 @@ nav hr {
 
 #projects #fylo {
   background: #ffcc92;
+}
+
+#projects #profolio {
+  background: #dadaff;
 }
 
 #projects img {
@@ -315,6 +327,16 @@ nav hr {
   text-align: center;
   height: 30px;
   background: #17d827;
+  color: white;
+  -webkit-box-shadow: 0 1px 3px #868686;
+          box-shadow: 0 1px 3px #868686;
+}
+
+#projects .django {
+  padding: 10px;
+  text-align: center;
+  height: 30px;
+  background: #ffd900;
   color: white;
   -webkit-box-shadow: 0 1px 3px #868686;
           box-shadow: 0 1px 3px #868686;
@@ -387,7 +409,6 @@ nav hr {
   /* NAV */
   nav {
     top: 0;
-    background-color: #33184d;
     font-size: 1.2em;
   }
   nav ul {
@@ -407,9 +428,9 @@ nav hr {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    border-top: 5px solid #ffc0da;
-    border-bottom: 5px solid #ffc0da;
-    background: none;
+    border-top: 5px solid var(--red);
+    border-bottom: 5px solid var(--orange);
+    background: var(--container1);
   }
   .left {
     padding-left: 150px;
@@ -423,7 +444,6 @@ nav hr {
     font-size: 2.5em;
     font-weight: 100;
     text-align: left;
-    color: var(--red);
   }
   .left p {
     padding: 0px;
@@ -459,7 +479,7 @@ nav hr {
   #projects {
     top: 150px;
   }
-  #projects #rock-paper-scissors, #projects #fylo {
+  #projects #rock-paper-scissors, #projects #fylo, #projects #profolio {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;

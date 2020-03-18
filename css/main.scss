@@ -9,17 +9,26 @@ html {
     --orange: #ff6b30;
     --gradient1: #3c084a;
     --gradient2: #141e30;
+    --body: white;
+    --font-color: black;
+    --container1: white;
 }
 
 html[data-theme='dark'] {
-    --red: #2600a0;
-    --pink: #5d81f8;
-    --purple: #00ff95;
-    --orange: #00a8ff;
+    --dark-purple: var(--body);
+    --gradient1: #232323;
+    --gradient2: #232323;
+    --body: #181818;
+    --font-color: white;
+    --container1: var(--gradient1);
+    --container2: var(--body);
 }
 
 body {
     margin: 0;
+    background: var(--body);
+    color: var(--font-color);
+
     a {
         text-decoration: none;
     }
@@ -134,7 +143,7 @@ header {
 nav {
     position: relative;
     top: 150px;
-    background: var(--dark-purple);
+    background: var(--gradient1);
     height: 50px;
 
     a {
@@ -167,8 +176,8 @@ nav {
 
 #about {
     position: relative;
-    top: 150px;
-    background: rgb(255, 230, 254);
+    top: 155px;
+    background: var(--container1);
     height: 250px;
 }
 
@@ -182,7 +191,7 @@ nav {
         font-size: 2em;
         font-weight: 100;
         text-align: center;
-        color: var(--red);
+        color: var(--pink);
     }
     p {
         padding: 0 20px;
@@ -212,7 +221,7 @@ nav {
         font-size: 2em;
         font-weight: 100;
         text-align: center;
-        color: var(--red);
+        color: var(--pink);
     }
     p {
         padding: 0 20px;
@@ -236,6 +245,10 @@ nav {
 
     #fylo {
         background: rgb(255, 204, 146);
+    }
+
+    #profolio {
+        background: rgb(218, 218, 255);
     }
 
     img {
@@ -269,6 +282,14 @@ nav {
         text-align: center;
         height: 30px;
         background: rgb(23, 216, 39);
+        color: white;
+        box-shadow: 0 1px 3px rgb(134, 134, 134);
+    }
+    .django {
+        padding: 10px;
+        text-align: center;
+        height: 30px;
+        background: rgb(255, 217, 0);
         color: white;
         box-shadow: 0 1px 3px rgb(134, 134, 134);
     }
@@ -342,7 +363,6 @@ nav {
     /* NAV */
     nav {
         top: 0;
-        background-color: rgb(51, 24, 77);
         font-size: 1.2em;
 
         ul {
@@ -362,9 +382,9 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        border-top: 5px solid rgb(255, 192, 218);
-        border-bottom: 5px solid rgb(255, 192, 218);
-        background: none;
+        border-top: 5px solid var(--red);
+        border-bottom: 5px solid var(--orange);
+        background: var(--container1);
     }
 
     .left {
@@ -378,7 +398,6 @@ nav {
             font-size: 2.5em;
             font-weight: 100;
             text-align: left;
-            color: var(--red);
         }
         p {
             padding: 0px;
@@ -416,7 +435,7 @@ nav {
     #projects {
         top: 150px;
 
-        #rock-paper-scissors, #fylo {
+        #rock-paper-scissors, #fylo, #profolio {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
