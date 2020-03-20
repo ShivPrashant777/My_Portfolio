@@ -229,11 +229,6 @@ nav hr {
   padding: 0 20px;
 }
 
-.left p.subtext {
-  color: gray;
-  font-size: 0.7em;
-}
-
 .left img {
   width: 300px;
   display: block;
@@ -342,7 +337,7 @@ nav hr {
           box-shadow: 0 1px 3px #868686;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 850px) {
   /*  HEADER */
   header {
     height: 260px;
@@ -432,6 +427,9 @@ nav hr {
     border-bottom: 5px solid var(--orange);
     background: var(--container1);
   }
+  #about p {
+    margin-top: 50px;
+  }
   .left {
     padding-left: 150px;
     text-align: left;
@@ -441,7 +439,7 @@ nav hr {
   }
   .left h1 {
     margin-top: 50px;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 100;
     text-align: left;
   }
