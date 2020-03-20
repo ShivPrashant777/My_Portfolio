@@ -1,8 +1,8 @@
 var github = document.getElementById("github-icon");
 var face_img = document.querySelector(".face img");
-var rock_paper_scissors = document.getElementById("rock-paper-scissors");
-var fylo = document.getElementById("fylo");
-var profolio = document.getElementById("profolio");
+var odd = document.getElementsByClassName("odd");
+var even = document.getElementsByClassName("even");
+
 
 var container1 = "#232323";
 var container2 = "#181818";
@@ -26,35 +26,34 @@ github.addEventListener("mouseout", function(){
 face_img.addEventListener("click", function(){
     if (dark == false) {
         document.documentElement.setAttribute('data-theme', 'dark'); 
-        github.addEventListener("mouseover", function(){
-            this.src = "images/github-icon-green.svg";
-        }); 
-        github.addEventListener("mouseout", function(){
-            this.src = "images/github-icon-white.svg";
-        });
-
-        rock_paper_scissors.style.background = container1;  
-        fylo.style.background = container2;      
-        profolio.style.background = container1;      
+        var i;
+        for (i = 0; i < odd.length; i++) {
+            odd[i].style.background = container1;
+        }
+        for (i = 0; i < even.length; i++) {
+            even[i].style.background = container2;
+        }      
 
         dark = true;      
     } else {
         document.documentElement.setAttribute('data-theme', 'light'); 
-        github.addEventListener("mouseover", function(){
-            this.src = "images/github-icon-purple.svg";
-        }); 
-        github.addEventListener("mouseout", function(){
-            this.src = "images/github-icon-white.svg";
-        });
-
-        rock_paper_scissors.style.background = "rgb(218, 218, 255)";
-        fylo.style.background = "rgb(255, 204, 146)";
-        profolio.style.background = "rgb(218, 218, 255)";
+        for (i = 0; i < odd.length; i++) {
+            odd[i].style.background = "rgb(253, 200, 255)";
+        }
+        for (i = 0; i < even.length; i++) {
+            even[i].style.background = "rgb(251, 245, 255)";
+        }    
 
         dark = false;
     }
 });
 
+github.addEventListener("mouseover", function(){
+    this.src = "images/github-icon-green.svg";
+}); 
+github.addEventListener("mouseout", function(){
+    this.src = "images/github-icon-white.svg";
+});
 
 github.addEventListener("mouseout", function(){
     this.src = "images/github-icon-white.svg";

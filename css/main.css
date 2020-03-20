@@ -268,16 +268,12 @@ nav hr {
   top: 160px;
 }
 
-#projects #rock-paper-scissors {
-  background: #dadaff;
+#projects .odd {
+  background: #fdc8ff;
 }
 
-#projects #fylo {
-  background: #ffcc92;
-}
-
-#projects #profolio {
-  background: #dadaff;
+#projects .even {
+  background: #fbf5ff;
 }
 
 #projects img {
@@ -297,44 +293,46 @@ nav hr {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-#projects .html {
+#projects ul.tags {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+#projects ul.tags li {
   padding: 10px;
+  margin-right: 5px;
+  padding-bottom: 0;
   text-align: center;
-  height: 30px;
-  background: #ff8800;
   color: white;
+  height: 30px;
   -webkit-box-shadow: 0 1px 3px #868686;
           box-shadow: 0 1px 3px #868686;
+}
+
+#projects .html {
+  background: #ff8800;
 }
 
 #projects .css {
-  padding: 10px;
-  text-align: center;
-  height: 30px;
   background: #147aff;
-  color: white;
-  -webkit-box-shadow: 0 1px 3px #868686;
-          box-shadow: 0 1px 3px #868686;
 }
 
 #projects .javascript {
-  padding: 10px;
-  text-align: center;
-  height: 30px;
   background: #17d827;
-  color: white;
-  -webkit-box-shadow: 0 1px 3px #868686;
-          box-shadow: 0 1px 3px #868686;
 }
 
 #projects .django {
-  padding: 10px;
-  text-align: center;
-  height: 30px;
   background: #ffd900;
-  color: white;
-  -webkit-box-shadow: 0 1px 3px #868686;
-          box-shadow: 0 1px 3px #868686;
 }
 
 @media only screen and (min-width: 850px) {
@@ -444,6 +442,7 @@ nav hr {
     text-align: left;
   }
   .left p {
+    font-size: 1em;
     padding: 0px;
   }
   .left img {
@@ -472,6 +471,7 @@ nav hr {
     text-align: right;
   }
   .right p {
+    font-size: 1em;
     padding: 0px;
   }
   #projects {
