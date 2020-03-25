@@ -49,12 +49,8 @@ face_img.addEventListener("click", function(){
 });
 
 github.addEventListener("mouseover", function(){
-    this.src = "images/github-icon-green.svg";
+    this.src = "images/github-icon-purple.svg";
 }); 
-github.addEventListener("mouseout", function(){
-    this.src = "images/github-icon-white.svg";
-});
-
 github.addEventListener("mouseout", function(){
     this.src = "images/github-icon-white.svg";
 });

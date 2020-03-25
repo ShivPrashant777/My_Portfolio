@@ -86,24 +86,6 @@ header {
           animation: fadein 2s;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .grid-container .face img:hover {
   cursor: pointer;
 }
@@ -165,6 +147,24 @@ header {
 .grid-container .social .github p {
   text-align: center;
   margin-top: 0;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* NAV */
@@ -233,6 +233,8 @@ nav hr {
   width: 300px;
   display: block;
   margin: 20px auto;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
 }
 
 .right {
@@ -243,6 +245,8 @@ nav hr {
 .right img {
   width: 300px;
   margin: 20px auto;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
 }
 
 .right h1 {
