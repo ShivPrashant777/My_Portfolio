@@ -1,56 +1,72 @@
-var github = document.getElementById("github-icon");
-var face_img = document.querySelector(".face img");
-var odd = document.getElementsByClassName("odd");
-var even = document.getElementsByClassName("even");
+var github = document.getElementById('github-icon');
+var face_img = document.querySelector('.face img');
+var odd = document.getElementsByClassName('odd');
+var even = document.getElementsByClassName('even');
+var helloFriend = document.querySelector('.hello-friend');
 
+// Typewriter Effect
+var text = `> HELLO, FRIEND`;
+var speed = 100;
+var i = 0;
+function typeWriter() {
+	if (i < text.length) {
+		helloFriend.innerHTML += text.charAt(i);
+		helloFriend.style.color = 'limegreen';
+		helloFriend.style.borderRight = '2px solid white';
+		i++;
+		setTimeout(typeWriter, speed);
+	}
+}
 
-var container1 = "#232323";
-var container2 = "#181818";
+var container1 = '#232323';
+var container2 = '#181818';
 var dark = false;
 
-face_img.addEventListener("mouseover", function(){
-    this.style.opacity = '0.5';
+face_img.addEventListener('mouseover', function () {
+	this.style.opacity = '0.5';
 });
 
-face_img.addEventListener("mouseout", function(){
-    this.style.opacity = '1';
+face_img.addEventListener('mouseout', function () {
+	this.style.opacity = '1';
 });
 
-github.addEventListener("mouseover", function(){
-    this.src = "images/github-icon-purple.svg";
-}); 
-github.addEventListener("mouseout", function(){
-    this.src = "images/github-icon-white.svg";
+github.addEventListener('mouseover', function () {
+	this.src = 'images/github-icon-purple.svg';
+});
+github.addEventListener('mouseout', function () {
+	this.src = 'images/github-icon-white.svg';
 });
 
-face_img.addEventListener("click", function(){
-    if (dark == false) {
-        document.documentElement.setAttribute('data-theme', 'dark'); 
-        var i;
-        for (i = 0; i < odd.length; i++) {
-            odd[i].style.background = container1;
-        }
-        for (i = 0; i < even.length; i++) {
-            even[i].style.background = container2;
-        }      
+face_img.addEventListener('click', function () {
+	if (dark == false) {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		var i;
+		for (i = 0; i < odd.length; i++) {
+			odd[i].style.background = container1;
+		}
+		for (i = 0; i < even.length; i++) {
+			even[i].style.background = container2;
+		}
 
-        dark = true;      
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light'); 
-        for (i = 0; i < odd.length; i++) {
-            odd[i].style.background = "rgb(253, 200, 255)";
-        }
-        for (i = 0; i < even.length; i++) {
-            even[i].style.background = "rgb(251, 245, 255)";
-        }    
+		dark = true;
+	} else {
+		document.documentElement.setAttribute('data-theme', 'light');
+		for (i = 0; i < odd.length; i++) {
+			odd[i].style.background = 'rgb(253, 200, 255)';
+		}
+		for (i = 0; i < even.length; i++) {
+			even[i].style.background = 'rgb(251, 245, 255)';
+		}
 
-        dark = false;
-    }
+		dark = false;
+	}
 });
 
-github.addEventListener("mouseover", function(){
-    this.src = "images/github-icon-purple.svg";
-}); 
-github.addEventListener("mouseout", function(){
-    this.src = "images/github-icon-white.svg";
+github.addEventListener('mouseover', function () {
+	this.src = 'images/github-icon-purple.svg';
 });
+github.addEventListener('mouseout', function () {
+	this.src = 'images/github-icon-white.svg';
+});
+
+typeWriter();

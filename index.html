@@ -1,98 +1,138 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Shiv | Frontend Developer</title>
-</head>
-<body>
-    <header>
-        <div class="card">
-            <div class="grid-container">
-                <div class="face">
-                    <img src="images/face.png" alt="">
-                    <div class="vertical-bar"></div>
-                </div>
-                <div class="desc">
-                    <h1>S Shiv Prashant</h1>
-                    <h3>Frontend Developer</h3>
-                    <h4><a href="mailto:shivprashant777@gmail.com?Subject=Hello%20again" target="_top">shivprashant777@gmail.com</a></h4>
-                </div>
-                <div class="social">
-                    <a href="https://github.com/ShivPrashant777"><div class="github">
-                        <img src="images/github-icon-white.svg" alt="" id="github-icon">
-                        <p>Github</p>
-                    </div></a>
-                </div>
-            </div>
-        </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="images/favicon.png" />
+		<title>Shiv | Fullstack Developer</title>
+	</head>
+	<body>
+		<header>
+			<div class="card">
+				<div class="grid-container">
+					<div class="face">
+						<img src="images/face.png" alt="" />
+						<div class="vertical-bar"></div>
+					</div>
+					<div class="desc">
+						<h1>S Shiv Prashant</h1>
+						<h3>Fullstack Developer</h3>
+						<h4>
+							<a
+								href="mailto:shivprashant777@gmail.com?Subject=Hello%20again"
+								target="_top"
+								>shivprashant777@gmail.com</a
+							>
+						</h4>
+					</div>
+					<div class="social">
+						<a href="https://github.com/ShivPrashant777"
+							><div class="github">
+								<img
+									src="images/github-icon-white.svg"
+									alt=""
+									id="github-icon"
+								/>
+								<p>Github</p>
+							</div></a
+						>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li style="text-align: center;"><a href="#projects">Work</a></li>
-            <li style="text-align: right;"><a href="">Contact</a></li>
-        </ul>
-        <hr>
-    </nav>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li style="text-align: center;">
+					<a href="#projects">Work</a>
+				</li>
+				<li style="text-align: right;"><a href="">Contact</a></li>
+			</ul>
+			<hr />
+		</nav>
 
-    <section id="about">
-        <div class="left">
-            <h1>About</h1>
-            <p>Hi, I’m a Frontend Developer (Still Learning) from Bhilai. I’ve been doing this for about 2 years now and l love what I do. I am also learning backend development & other programming languages and hope
-                to do some great projects using them all. </p>               
-        </div>
-        <div class="right">
-            <img src="images/PC.svg" alt="" class="hide-mob">
-        </div>
-    </section>
+		<section id="about">
+			<div class="left">
+				<div class="terminal">
+					<div class="title-bar hide-mob">
+						<div class="buttons">
+							<div style="background-color: crimson;"></div>
+							<div style="background-color: yellow;"></div>
+							<div style="background-color: limegreen;"></div>
+							<p class="title">About</p>
+						</div>
+					</div>
+					<h1 class="hide-pc">About</h1>
+					<pre class="hello-friend hide-mob"></pre>
+					<p>
+						I am a Fullstack Developer (Still Learning) from Bhilai.
+						I’ve been doing this for about 2 years now and l love
+						what I do. I am currently learning backend development &
+						other programming languages and hope to do some great
+						projects using them all.
+					</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="images/PC.svg" alt="" class="hide-mob" />
+			</div>
+		</section>
 
-    <section id="projects">
-        <div id="rock-paper-scissors" class="odd">
-            <div class="left">
-                <h1>Rock Paper Scissors</h1>
-                <p>A simple Rock Paper Scissors Game</p>
-                <ul class="tags">
-                    <li class="html">HTML</li>
-                    <li class="css">CSS</li>
-                    <li class="javascript">Javascript</li>
-                </ul>
-            </div>
-            <div class="right">
-                <a href="https://shivprashant777.github.io/Rock-Paper-Scissors/"><img src="images/rock-paper-scissors.png" alt=""></a>  
-            </div>
-        </div>
-        <div id="fylo" class="even">
-            <div class="right">
-                <h1>Fylo Landing Page</h1>
-                <p>A  Responsive, Minimalistic Landing Page</p>
-                <ul class="tags">
-                    <li class="html">HTML</li>
-                    <li class="css">CSS</li>
-                </ul>
-            </div>
-            <div class="left">
-                <a href="https://shivprashant777.github.io/fylo-landing-page/"><img src="images/fylo.png" alt=""></a>  
-            </div>
-        </div>
-        <div id="profolio" class="odd">
-            <div class="left">
-                <h1>Profolio</h1>
-                <p>Django based site to upload and host portfolios.</p>
-                <ul class="tags">
-                    <li class="html">HTML</li>
-                    <li class="css">CSS</li>
-                    <li class="javascript">Javascript</li>
-                    <li class="django">Django</li>
-                </ul>
-            </div>
-            <div class="right">
-                <a href="https://shivprashant777.github.io/fylo-landing-page/"><img src="images/profolio.png" alt=""></a>  
-            </div>
-        </div>
-    </section>
-    <script src="js/hover-theme.js"></script>
-</body>
+		<section id="projects">
+			<div id="rock-paper-scissors" class="odd">
+				<div class="left">
+					<h1>Rock Paper Scissors</h1>
+					<p>A simple Rock Paper Scissors Game</p>
+					<ul class="tags">
+						<li class="html">HTML</li>
+						<li class="css">CSS</li>
+						<li class="javascript">Javascript</li>
+					</ul>
+				</div>
+				<div class="right">
+					<a
+						href="https://shivprashant777.github.io/Rock-Paper-Scissors/"
+						><img src="images/rock-paper-scissors.png" alt=""
+					/></a>
+				</div>
+			</div>
+			<div id="fylo" class="even">
+				<div class="right">
+					<h1>Fylo Landing Page</h1>
+					<p>A Responsive, Minimalistic Landing Page</p>
+					<ul class="tags">
+						<li class="html">HTML</li>
+						<li class="css">CSS</li>
+					</ul>
+				</div>
+				<div class="left">
+					<a
+						href="https://shivprashant777.github.io/fylo-landing-page/"
+						><img src="images/fylo.png" alt=""
+					/></a>
+				</div>
+			</div>
+			<div id="profolio" class="odd">
+				<div class="left">
+					<h1>Profolio</h1>
+					<p>Django based site to upload and host portfolios.</p>
+					<ul class="tags">
+						<li class="html">HTML</li>
+						<li class="css">CSS</li>
+						<li class="javascript">Javascript</li>
+						<li class="django">Django</li>
+					</ul>
+				</div>
+				<div class="right">
+					<a
+						href="https://shivprashant777.github.io/fylo-landing-page/"
+						><img src="images/profolio.png" alt=""
+					/></a>
+				</div>
+			</div>
+		</section>
+		<script src="js/hover-theme.js"></script>
+	</body>
 </html>
